@@ -1,0 +1,112 @@
+body {
+  background-image: url('IMG-20230310-WA0008.jpeg');
+  background-size:cover; 
+  background-repeat: no-repeat ;
+  background-position:  center center ;
+  margin: 60px;
+  
+}
+
+
+p {
+  color: black;
+  font-weight: 900;
+}
+
+button {
+  margin-top: 30px;
+}
+
+
+.arrow-right {
+  position: relative;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 110px solid rgb(221, 22, 22);
+}
+
+.arrow-right::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid rgb(243, 29, 29);
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #8222ff;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(124, 26, 26);
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 1rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.btn:active {
+  background-color: #0056b3;
+  box-shadow: none;
+}
+
+strong {
+  color: rgb(166, 21, 250);
+  background-color: white;
+}
+
+
+.container {
+  width: 80%; /* Establecer el ancho del contenedor */
+  margin: 0 auto; /* Centrar el contenedor en la página */
+}
+
+.left {
+  float: left;
+  max-width: 50%; /* Establecer el ancho máximo del párrafo */
+  margin-right: 20px; /* Añadir un margen derecho para evitar que otros elementos se superpongan */
+  margin-top: 200px;
+}
+
+
+
+.negrito {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+
+
+
+h1 {
+  font-size: 72px;
+  font-weight: bold;
+  outline: 2px solid rgba(202, 30, 30, 0);
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(204, 48, 48);
+}
+
+
+
+.fondo {
+  background-image: url('rsz_1rsz_img_20230312_222306.jpg');
+  background-size:cover; 
+  background-repeat: no-repeat ;
+  background-position:  right top ;
+  margin: 60px;
+  
+}
+
+.izquierda {
+  float: left;
+  max-width: 20%;
+}
