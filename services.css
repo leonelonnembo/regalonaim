@@ -1,0 +1,268 @@
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(240, 240, 232);
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    padding-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h2 {
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Estilos de la sección de servicios */
+
+.services-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    
+}
+
+
+
+.service-card img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.service-card h2 {
+    color: #333;
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.service-card p {
+    color: #666;
+    font-size: 14px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.service-card button {
+    background-color: #ff6600;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 10px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.service-card button:hover {
+    background-color: #e55d00;
+}
+
+
+
+/* Estilos de la sección de detalles del servicio (pueden compartir estilos con home.css si son iguales) */
+
+.details-section {
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    display: none;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+.details-section h2 {
+    color: #fff;
+    margin-top: 0;
+    padding: 20px;
+}
+
+.details-section #service-details {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+}
+
+.details-section button {
+    background-color: #ff6600; /* Color naranja */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+}
+
+.details-section button:hover {
+    background-color: #e55d00; /* Color naranja oscuro al pasar el ratón */
+}
+
+/* Estilos para los botones de navegación */
+
+.btn-navegacion {
+    background-color: #ff6600; /* Color naranja */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-navegacion:hover {
+    background-color: #e55d00; /* Color naranja oscuro al pasar el ratón */
+}
+/* Estilos para la sección de detalles del servicio */
+.details-section {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.932); /* Fondo oscuro con transparencia */
+    z-index: 999; /* Asegura que esté por encima del contenido principal */
+    overflow-y: auto; /* Permite desplazamiento vertical si el contenido es más largo que la ventana */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.details-section.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Estilos para el modal del carrito */
+#cart-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Estilos para el contenido del modal del carrito */
+.cart-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px; /* Ancho máximo del modal */
+}
+
+/* Estilos para el botón de cierre del modal del carrito */
+.cart-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cart-close:hover,
+.cart-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#cart {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    z-index: 1000; /* Asegúrate de que esté por encima del resto del contenido */
+    display: none; /* Ocultar inicialmente */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+}
+
+#cart h2 {
+    margin-top: 0;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart-items li {
+    margin-bottom: 10px;
+    
+}
+
+#cart-items li:last-child {
+    font-weight: bold;
+    margin-top: 10px;
+    padding-top: 15px;
+    
+}
+
+#cart button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#cart button:hover {
+    background-color: #0056b3;
+}

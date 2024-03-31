@@ -1,0 +1,86 @@
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Establece el mínimo de altura de la ventana */
+    background-image: url('https://tangol.com/blog/Fotos/Notas/la-seleccion-de-los-mejores-albergues-transitorios-telos-de-buenos-aires_88_202104291128480.JPG');
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    background-color: rgb(44, 44, 44);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos de la sección de bienvenida */
+
+.welcome-section {
+
+    flex: 1; /* Hace que la sección ocupe el espacio restante */
+    text-align: center;
+    padding: 100px 0;
+    background-color: rgba(0, 0, 0, 0.377);
+    color: wheat;
+}
+
+.welcome-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.welcome-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn-ver-servicios {
+    background-color: #ff6600; /* Color naranja */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-ver-servicios:hover {
+    background-color: #e55d00; /* Color naranja oscuro al pasar el ratón */
+}
+
+/* Estilos para los botones de navegación */
+
+.btn-navegacion {
+    background-color: #ff6600; /* Color naranja */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-navegacion:hover {
+    background-color: #e55d00; /* Color naranja oscuro al pasar el ratón */
+}
